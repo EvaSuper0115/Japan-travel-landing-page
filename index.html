@@ -27,7 +27,13 @@
   <body>
     <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">JAPAN</a>
+        <a class="navbar-brand" href="./index.html"
+          ><span
+            ><img
+              class="japan-logo"
+              src="./src/Flag-map_of_Japan.svg.png" /></span
+          >JAPAN</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -46,14 +52,17 @@
                 class="nav-link active"
                 aria-current="page"
                 href="index.html#introduction"
+                title="About Japan"
                 >About</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Food</a>
+              <a class="nav-link" href="#" title="Japanese Cuisine">Food</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Activities</a>
+              <a class="nav-link" href="#" title="What to do in Japan"
+                >Activities</a
+              >
             </li>
             <li class="nav-item dropdown">
               <a
@@ -62,14 +71,23 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
+                title="Book your visit"
               >
                 Book Now
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Flights</a></li>
-                <li><a class="dropdown-item" href="#">Hotels</a></li>
                 <li>
-                  <a class="dropdown-item" href="#">Tours</a>
+                  <a class="dropdown-item" href="#" title="See flights"
+                    >Flights</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" title="See hotels"
+                    >Hotels</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" title="See tours">Tours</a>
                 </li>
               </ul>
             </li>

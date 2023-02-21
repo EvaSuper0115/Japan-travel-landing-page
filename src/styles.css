@@ -32,6 +32,16 @@ img {
 img:hover {
   filter: brightness(100%);
 }
+.japan-logo {
+  max-width: 35px;
+  filter: brightness(100%);
+}
+.dropdown-menu {
+  background: rgb(33, 37, 41);
+}
+.dropdown-item {
+  color: white;
+}
 .pageHero {
   text-align: center;
   background: linear-gradient(
@@ -116,7 +126,7 @@ img:hover {
   color: rgb(221, 221, 221);
   margin: 18px auto 31px auto;
 }
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   .introduction-page-grid {
     grid-template-columns: 1fr;
   }
