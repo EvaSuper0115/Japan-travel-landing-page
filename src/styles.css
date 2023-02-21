@@ -1,0 +1,59 @@
+:root {
+  --paragraph-font: "Roboto", sans-serif;
+  --subtitle-font: "Poppins", sans-serif;
+  --large-title-font: "Playfair Display", serif;
+  --hover-transition: all 250ms ease-in-out;
+}
+body {
+  color: #ffffff;
+  background: black;
+}
+a {
+  font-family: var(--paragraph-font);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 16px 32px;
+  background: #885df1;
+  border-radius: 100px;
+  transition: var(--hover-transition);
+}
+a:hover {
+  font-size: 16.5px;
+}
+.pageHero {
+  text-align: center;
+  background: linear-gradient(
+      360deg,
+      #030504 0%,
+      rgba(2, 4, 3, 0.3) 51.55%,
+      rgba(11, 6, 32, 0) 100%
+    ),
+    url(pagehero-bg-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.travelTitle {
+  font-family: var(--paragraph-font);
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.countryTitle {
+  font-family: var(--large-title-font);
+  font-size: 128px;
+  font-weight: 700;
+  line-height: 171px;
+}
+.countrySubtitle {
+  font-family: var(--paragraph-font);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+}
