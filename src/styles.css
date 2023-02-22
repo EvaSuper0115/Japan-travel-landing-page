@@ -11,7 +11,8 @@ body {
 .page-hero-text a,
 .introduction a,
 .food-cards a,
-.restautant-cards a {
+.restautant-cards a,
+.activities-cards a {
   font-family: var(--paragraph-font);
   font-weight: 600;
   font-size: 13px;
@@ -38,6 +39,7 @@ img:hover {
 small {
   font-size: 13px;
 }
+
 .title-content-flex-start {
   display: flex;
   justify-content: flex-start;
@@ -72,8 +74,24 @@ small {
   background-size: cover;
   background-position: center;
 }
+.activities-pageHero {
+  text-align: center;
+  background: linear-gradient(
+      360deg,
+      #030504 0%,
+      rgba(2, 4, 3, 0.3) 51.55%,
+      rgba(11, 6, 32, 0) 100%
+    ),
+    url(pagehero-bg-2-senbon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .page-hero-text {
-  margin: auto 15px;
+  margin: 0 auto;
+}
+.countryTitle {
+  justify-content: center;
 }
 .bodyContainer {
   margin: 15px;
@@ -85,7 +103,7 @@ small {
   line-height: 28px;
   letter-spacing: 5px;
   text-transform: uppercase;
-  padding-top: 240px;
+  padding-top: 139px;
 }
 .countryTitle {
   font-family: var(--large-title-font);
@@ -170,7 +188,7 @@ small {
 .card {
   background: rgb(33, 37, 41);
   color: white;
-  box-shadow: 10px 10px 40px rgba(7, 5, 20, 0.2);
+  box-shadow: -1px 10px 32px 12px rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   border-width: 0;
   opacity: 0.9;
@@ -216,11 +234,12 @@ small {
   display: flex;
   justify-content: center;
 }
-.restaurants-page {
+.restaurants-page,
+.activities-page {
   background: linear-gradient(
       360deg,
-      rgba(3, 5, 4, 0.9) 30%,
-      rgba(2, 4, 3, 0.723) 70%,
+      rgba(3, 5, 4, 0.894) 50%,
+      rgba(2, 4, 3, 0.818) 70%,
       rgba(11, 6, 32, 0.6) 100%
     ),
     url(restaurant-page-bg.jpg);
@@ -247,20 +266,41 @@ small {
   filter: grayscale(1);
   transition: var(--hover-transition);
 }
+.activities-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 90px 87px;
+  grid-gap: 30px;
+}
+
+.img-adjustments {
+  width: 100%;
+  filter: contrast(110%);
+}
 
 @media (max-width: 992px) {
   .introduction-page-grid,
   .food-cards-grid,
-  .restautant-cards-grid {
+  .restautant-cards-grid,
+  .activities-cards-grid {
     grid-template-columns: 1fr;
   }
+  .restautant-cards,
+  .map-embeds,
+  .restaurants-images {
+    border-radius: 15px;
+  }
 }
-@media (max-width: 576px) {
+@media (max-width: 774px) {
   .countryTitle {
-    font-size: 100px;
+    font-size: 80px;
+  }
+  .countrySubtitle {
+    font-size: 30px;
   }
   .food-cards-grid,
-  .restautant-cards-grid {
+  .restautant-cards-grid,
+  .activities-cards-grid {
     margin: 15px;
   }
 }
