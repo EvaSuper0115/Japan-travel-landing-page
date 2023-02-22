@@ -28,7 +28,7 @@ a:hover {
   font-size: 13.2px;
 }
 img {
-  filter: brightness(70%);
+  filter: brightness(90%);
   border-radius: 5px;
   transition: var(--hover-transition);
 }
@@ -219,8 +219,8 @@ small {
 .restaurants-page {
   background: linear-gradient(
       360deg,
-      rgba(3, 5, 4, 0.9) 0%,
-      rgba(2, 4, 3, 0.7) 51.55%,
+      rgba(3, 5, 4, 0.9) 30%,
+      rgba(2, 4, 3, 0.723) 70%,
       rgba(11, 6, 32, 0.6) 100%
     ),
     url(restaurant-page-bg.jpg);
