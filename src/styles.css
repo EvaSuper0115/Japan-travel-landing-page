@@ -9,10 +9,11 @@ body {
   background: black;
 }
 .page-hero-text a,
-.introduction a {
+.introduction a,
+.food-cards a {
   font-family: var(--paragraph-font);
   font-weight: 600;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 19px;
   text-decoration: none;
   color: #ffffff;
@@ -20,9 +21,10 @@ body {
   background: rgb(99, 91, 231);
   border-radius: 100px;
   transition: var(--hover-transition);
+  margin: 9px;
 }
 a:hover {
-  font-size: 16.5px;
+  font-size: 13.2px;
 }
 img {
   filter: brightness(70%);
@@ -31,6 +33,20 @@ img {
 }
 img:hover {
   filter: brightness(100%);
+}
+small {
+  font-size: 13px;
+}
+.title-content-flex-start {
+  display: flex;
+  justify-content: flex-start;
+}
+.title-content-centered {
+  display: flex;
+  justify-content: center;
+}
+.new-page-margin-top {
+  margin-top: 102px;
 }
 .japan-logo {
   max-width: 35px;
@@ -104,6 +120,7 @@ img:hover {
 .introduction {
   margin: auto 15px;
 }
+
 .poppins-subtitles {
   font-family: var(--subtitle-font);
   font-weight: 700;
@@ -112,6 +129,8 @@ img:hover {
   letter-spacing: 5px;
   text-transform: uppercase;
   color: #5bd5e3;
+  padding: 2px;
+  background: rgba(91, 213, 227, 0.15);
 }
 .introduction-title {
   font-family: var(--large-title-font);
@@ -126,13 +145,72 @@ img:hover {
   color: rgb(221, 221, 221);
   margin: 18px auto 31px auto;
 }
+.food-page {
+  background: linear-gradient(
+      360deg,
+      rgba(3, 5, 4, 0.9) 0%,
+      rgba(2, 4, 3, 0.7) 51.55%,
+      rgba(11, 6, 32, 0.6) 100%
+    ),
+    url(pagehero-bg-2-senbon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.food-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 50px 87px;
+  grid-gap: 30px;
+}
+.food-cards {
+  color: #272044;
+  box-shadow: 10px 10px 40px rgba(7, 5, 20, 0.2);
+  border-radius: 15px;
+  border-width: 0;
+}
+.youtube-embeds {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 15px;
+}
+
+.card-text-container {
+  margin: 24px 32px 43px 32px;
+}
+.card-titles {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  font-family: var(--paragraph-font);
+}
+.card-paragraphs {
+  font-family: var(--paragraph-font);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+}
+.card-subtitles {
+  font-family: var(--paragraph-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+.links-rows {
+  display: flex;
+  justify-content: center;
+}
 @media (max-width: 992px) {
-  .introduction-page-grid {
+  .introduction-page-grid,
+  .food-cards-grid {
     grid-template-columns: 1fr;
   }
 }
-@media (max-width: 414px) {
+@media (max-width: 576px) {
   .countryTitle {
     font-size: 100px;
+  }
+  .food-cards-grid {
+    margin: 15px;
   }
 }
