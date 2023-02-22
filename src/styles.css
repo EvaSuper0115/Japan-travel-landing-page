@@ -232,15 +232,15 @@ small {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 50px 87px;
-  grid-gap: 30px;
+  grid-gap: 5px;
 }
 .restaurants-images {
   border-radius: 15px 15px 0px 0px;
 }
 .map-embeds {
   width: 100%;
-  aspect-ratio: 16/ 9;
-  border-radius: 0px 0px 15px 15px;
+  aspect-ratio: 1/1;
+  border-radius: 15px;
   filter: grayscale(1);
   transition: var(--hover-transition);
 }
