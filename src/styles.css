@@ -152,10 +152,13 @@ small {
       rgba(2, 4, 3, 0.7) 51.55%,
       rgba(11, 6, 32, 0.6) 100%
     ),
-    url(pagehero-bg-2-senbon.jpg);
+    url(food-page-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+.subtitle-margin-top {
+  margin-top: 102px;
 }
 .food-cards-grid {
   display: grid;
@@ -168,13 +171,22 @@ small {
   box-shadow: 10px 10px 40px rgba(7, 5, 20, 0.2);
   border-radius: 15px;
   border-width: 0;
+  opacity: 0.9;
+  transition: var(--hover-transition);
+}
+.food-cards:hover {
+  opacity: 1;
 }
 .youtube-embeds {
   width: 100%;
   aspect-ratio: 16 / 9;
-  border-radius: 15px;
+  border-radius: 15px 15px 0px 0px;
+  filter: grayscale(1);
+  transition: var(--hover-transition);
 }
-
+.youtube-embeds:hover {
+  filter: grayscale(0);
+}
 .card-text-container {
   margin: 24px 32px 43px 32px;
 }
