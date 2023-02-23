@@ -388,6 +388,9 @@ strong {
   .booknow-wholeGrid {
     padding: 20px;
   }
+  .card-text {
+    font-size: 12px;
+  }
 }
 @media (max-width: 774px) {
   .countryTitle {
