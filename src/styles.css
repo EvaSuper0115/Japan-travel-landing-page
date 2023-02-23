@@ -334,7 +334,7 @@ strong {
   font-family: var(--subtitle-font);
 }
 .footer-wholeGrid {
-  margin: 40px 100px 0 100px;
+  margin: 80px 100px 0 100px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -369,6 +369,9 @@ strong {
 }
 .page-directory-links {
   text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+  padding: 21px;
 }
 @media (max-width: 992px) {
   .introduction-page-grid,
@@ -396,9 +399,11 @@ strong {
   .food-cards-grid,
   .restautant-cards-grid,
   .activities-cards-grid,
-  .footer-wholeGrid,
   .booknow-wholeGrid {
     margin: 15px;
+  }
+  .footer-wholeGrid {
+    margin: 80px 15px 0 15px;
   }
   .footer-wholeGrid,
   .booknow-wholeGrid {
@@ -406,5 +411,8 @@ strong {
   }
   .footer-grids {
     margin: 15px 0;
+  }
+  .introduction-title {
+    text-align: center;
   }
 }
