@@ -40,6 +40,10 @@ small {
 strong {
   font-size: 27px;
 }
+.img-1-to-1-ratio {
+  aspect-ratio: 1/1;
+  filter: brightness(70%);
+}
 .title-content-flex-start {
   display: flex;
   justify-content: flex-start;
@@ -302,6 +306,19 @@ strong {
   width: 100%;
   filter: contrast(110%);
 }
+.img-hover-to-show-text {
+  color: #ffffff00;
+  font-weight: 600;
+  font-size: 18px;
+  transition: var(--hover-transition);
+}
+.img-hover-to-show-text:hover {
+  color: #ffffff;
+}
+.card-title {
+  color: #ffffff;
+  font-weight: 700;
+}
 .footer-container {
   background: linear-gradient(
       360deg,
@@ -323,9 +340,9 @@ strong {
 }
 .booknow-wholeGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 80px;
-  padding: 26px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 26px 130px;
 }
 .logo-img-adjustment {
   width: 100%;
@@ -364,6 +381,9 @@ strong {
   .map-embeds,
   .restaurants-images {
     border-radius: 15px;
+  }
+  .booknow-wholeGrid {
+    padding: 20px;
   }
 }
 @media (max-width: 774px) {
