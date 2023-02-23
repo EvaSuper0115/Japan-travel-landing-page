@@ -25,9 +25,7 @@ body {
   transition: var(--hover-transition);
   margin: 9px;
 }
-a:hover {
-  font-size: 13.2px;
-}
+
 img {
   filter: brightness(90%);
   border-radius: 5px;
@@ -85,6 +83,19 @@ strong {
       rgba(11, 6, 32, 0) 100%
     ),
     url(pagehero-bg-2-senbon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.booknow-pageHero {
+  text-align: center;
+  background: linear-gradient(
+      360deg,
+      #030504 0%,
+      rgba(2, 4, 3, 0.3) 51.55%,
+      rgba(11, 6, 32, 0) 100%
+    ),
+    url(airport.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -310,7 +321,16 @@ strong {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-
+.booknow-wholeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 80px;
+  padding: 26px;
+}
+.logo-img-adjustment {
+  width: 100%;
+  filter: brightness(130%);
+}
 .footer-grids {
   margin: 30px 0px;
 }
@@ -329,6 +349,9 @@ strong {
   font-size: 14px;
   line-height: 1.5;
   opacity: 0.8;
+}
+.page-directory-links {
+  text-decoration: none;
 }
 @media (max-width: 992px) {
   .introduction-page-grid,
@@ -353,10 +376,12 @@ strong {
   .food-cards-grid,
   .restautant-cards-grid,
   .activities-cards-grid,
-  .footer-wholeGrid {
+  .footer-wholeGrid,
+  .booknow-wholeGrid {
     margin: 15px;
   }
-  .footer-wholeGrid {
+  .footer-wholeGrid,
+  .booknow-wholeGrid {
     grid-template-columns: 1fr;
   }
   .footer-grids {
