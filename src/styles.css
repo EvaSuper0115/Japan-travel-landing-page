@@ -420,3 +420,8 @@ strong {
     text-align: center;
   }
 }
+@media (max-width: 576px) {
+  .display-none-when-small-screen {
+    display: none;
+  }
+}
