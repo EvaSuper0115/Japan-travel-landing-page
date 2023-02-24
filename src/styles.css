@@ -394,10 +394,10 @@ strong {
 }
 @media (max-width: 774px) {
   .countryTitle {
-    font-size: 80px;
+    font-size: 66px;
   }
   .countrySubtitle {
-    font-size: 30px;
+    font-size: 24px;
   }
   .food-cards-grid,
   .restautant-cards-grid,
