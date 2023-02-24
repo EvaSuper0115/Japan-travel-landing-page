@@ -322,9 +322,9 @@ strong {
 .footer-container {
   background: linear-gradient(
       360deg,
-      rgba(3, 5, 4, 0.451) 10%,
-      rgba(2, 4, 3, 0.487) 40%,
-      rgba(11, 6, 32, 0.6) 100%
+      rgb(3 5 4 / 31%) 10%,
+      rgb(2 4 3 / 63%) 40%,
+      rgb(0 0 0) 100%
     ),
     url(restaurant-page-bg.jpg);
   background-repeat: no-repeat;
@@ -372,6 +372,7 @@ strong {
   font-weight: 600;
   font-size: 17px;
   padding: 21px;
+  color: #5bd5e3;
 }
 @media (max-width: 992px) {
   .introduction-page-grid,
